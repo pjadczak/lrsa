@@ -1,0 +1,70 @@
+body{
+    background-color: #ddd; 
+}
+.boxConfirm{
+    padding: 20px;
+    text-align: center;
+    .button{
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px 0px;
+        background-color: #DFDFDF;
+        border: 1px solid #D0D0D0;
+        margin: 0px 10px;
+        transition: all 0.3s;
+        &.button-deny{
+            background-color: red;
+            color: white;
+            border-color: #A20000;
+            &:hover{
+                background-color: black;
+            }
+        }
+        &.button-accept{
+            background-color: green;
+            color: white;
+            border-color: #005C25;
+        }
+    }
+
+}
+
+.mainBlock{
+    max-width: 750px;
+    margin: 0px auto;
+    background-color: white;
+
+    .imageTop{
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .content{
+        padding: 30px;
+        h3{
+            font-size: 22px;
+            font-weight: 500;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    footer{
+        border-top: 1px solid #9ee518;
+        min-height: 134px;
+        background: #505050;
+        text-align: center;
+        padding: 30px 0px 0px 0px;
+        color: white;
+        .text{
+            padding: 20px;
+            font-size: 12px;
+        }
+        img{
+            max-width: 250px;
+            width: 250px;
+        }
+    }
+}
