@@ -61,7 +61,7 @@ class ProfileController extends Controller
         
         $action = $this->profileRepository->SaveDataProfile($request,$this->user);
         if (!($action['result']??true)){
-            return response(['comm'=>$action['comm']], 422);
+            return response(['comm'=>$action['comm'], 'errors' => $action['errors']??[] ], 422);
         }
         return response($action, 200);
 

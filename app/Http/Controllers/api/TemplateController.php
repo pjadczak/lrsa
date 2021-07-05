@@ -128,7 +128,7 @@ class TemplateController extends Controller
 
         $action = $this->templateRepository->SaveTemplate($this->user,$request,$id);
         if (!($action['result']??true)){
-            return response([ 'comm' => $action['comm'] ], 422);
+            return response([ 'comm' => $action['comm'], 'errors' => $action['errors']??[] ], 422);
         }
 
         return response($action, 200);
